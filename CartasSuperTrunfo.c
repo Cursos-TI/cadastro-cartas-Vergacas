@@ -9,7 +9,6 @@ int main()
 {
   // Área para definição das variáveis para armazenar as propriedades das cidades
   // Variaveis Carta 1
-  char estado;
   char codigoCarta[3];
   char cidade[20];
   int populacao;
@@ -18,7 +17,6 @@ int main()
   float pib;
 
   // Variaveis Carta 2
-  char estado2;
   char codigoCarta2[3];
   char cidade2[20];
   int populacao2;
@@ -29,8 +27,6 @@ int main()
   // Área para entrada de dados
   // Entrada de informções da Carta 1
   printf("\n --Dados da Carta Numero um -- \n");
-  printf("Informe o Estado: ");
-  scanf("%c", &estado);
   printf("Informe o Codigo da carta: ");
   scanf("%3s", &codigoCarta);
   while (getchar() != '\n'); //Limpar o buffer para envitar le uma linha vazia
@@ -48,8 +44,6 @@ int main()
   // Entrada de informções da Carta 2
   printf("\n --Dados da Carta Numero Dois -- \n");
   while (getchar() != '\n'); //Limpar o buffer para envitar le uma linha vazia
-  printf("Informe o Estado: ");
-  scanf("%c", &estado2);
   printf("Informe o Codigo da carta: ");
   scanf("%3s", &codigoCarta2);
   while (getchar() != '\n'); //Limpar o buffer para envitar le uma linha vazia
@@ -65,6 +59,24 @@ int main()
   scanf("%d", &nPontosTuristicos2);
 
   // Área para exibição dos dados da cidade
+  printf("\n -- Carta 1 -- \n");
+  printf("Estado: %c \n", codigoCarta[0]);
+  printf("Codigo da carta: %s \n", codigoCarta);
+  printf("Nome da cidade: %s ", cidade);
+  printf("População da cidade: %d\n", populacao);
+  printf("Area da cidade: %.2f km \n", area);
+  printf("PIB da cidade: %.2f Bilhoes de reais \n", pib);
+  printf("Numero de pontos turisticos: %d\n", nPontosTuristicos);
+
+  printf("\n -- Carta 2 -- \n");
+  printf("Estado: %c \n", codigoCarta2[0]);
+  printf("Codigo da carta: %s \n", codigoCarta2);
+  printf("Nome da cidade: %s ", cidade2);
+  printf("População da cidade: %d\n", populacao2);
+  printf("Area da cidade: %.2f km \n", area2);
+  printf("PIB da cidade: %.2f Bilhoes de reais \n", pib2);
+  printf("Numero de pontos turisticos: %d\n", nPontosTuristicos2);
+
 
   return 0;
 }
